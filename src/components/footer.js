@@ -33,21 +33,21 @@ function ShopFooter() {
                     <div>TOP SẢN PHẨM</div>
                     <span>Áo phông</span>
                     <div>
-                        <a href="#">Rau muống</a>, <a href="#">Rau cải</a>,
-                        <a href="#">Cải thìa</a>, <a href="#">Mồng tơi</a>
+                        <a href="#">GUCCI</a>, <a href="#">DIOR</a>,
+                        <a href="#">NhaKen</a>
                     </div>
                     <span>Váy</span>
                     <div>
-                        <a href="#">Khoai tây</a>, <a href="#">Khoai lang</a>,
-                        <a href="#">Sắn dây</a>
+                        <a href="#">Dior</a>, <a href="#">D&G</a>,
+                        <a href="#">LV</a>
                     </div>
                     <span>Quần Jean</span>
                     <div>
-                        <a href="#">Cà chua</a>, <a href="#">Chuối</a>, <a href="#">Táo</a>
+                        <a href="#">DIOR</a>, <a href="#">Jeans Calvin Klein.</a>, <a href="#">Jeans Lee Cooper.</a>
                     </div>
                     <span>Cổ trang</span>
                     <div>
-                        <a href="#">Thịt lợn</a>, <a href="#">Thịt gà</a>, <a href="#">Thịt bò</a>
+                        <a href="#">Mẫu Đơn Shop</a>, <a href="#">Dạ Thiên Nguyệt Các</a>
                     </div>
                 </div>
                 <div class="footer-location">
