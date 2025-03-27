@@ -90,12 +90,12 @@ function MainLayout() {
             })
     }, [])
     useEffect(() => {
-        const rawUser = localStorage.getItem('shop-vntt-user-data');
+        const rawUser = localStorage.getItem('shop-fashion-user-data');
         if (rawUser) {
             axios.post("http://localhost:3000/api/user/auth", {}, { withCredentials: true }).then((res) => {
                 if (res.status === 200) {
                     const userData = res.data.user;
-                    localStorage.setItem('shop-vntt-user-data', JSON.stringify(userData));
+                    localStorage.setItem('shop-fashion-user-data', JSON.stringify(userData));
                     setAccountNav(<>
                         <div className="user-nav" style={{ margin: "auto 10px", display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", position: "relative" }}>
                             <div style={{ width: "40px", height: "40px", backgroundColor: "#DDD", borderRadius: "50%", border: "1px solid #CCC" }}>

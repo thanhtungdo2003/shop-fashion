@@ -6,7 +6,6 @@ const ContainerStyled = styled.div`
     background-color:rgb(255, 255, 255);
     margin: 10px 0px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.13);
-    border-radius: 20px;
     padding: 5px;
     cursor: pointer;
     color: rgb(26, 26, 26);
