@@ -26,7 +26,7 @@ function ShopFooter() {
                     <div>GIỚI THIỆU</div>
                     <span>
 
-                        Chào mừng đến với FashionGEO, nơi mang đến những xu hướng thời trang mới nhất. Chúng tôi cung cấp sản phẩm chất lượng, đa dạng phong cách từ năng động đến thanh lịch, giúp bạn tự tin thể hiện cá tính. Hãy để FashionGEO đồng hành cùng bạn trên hành trình khẳng định phong cách riêng.
+                        Chào mừng đến với Marc, nơi mang đến những xu hướng thời trang mới nhất. Chúng tôi cung cấp sản phẩm chất lượng, đa dạng phong cách từ năng động đến thanh lịch, giúp bạn tự tin thể hiện cá tính. Hãy để Marc đồng hành cùng bạn trên hành trình khẳng định phong cách riêng.
                     </span>
                 </div>
                 <div class="footer-top">
