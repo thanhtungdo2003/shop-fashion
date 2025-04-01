@@ -198,7 +198,7 @@ function MainLayout() {
                                     </div>
                                     <div className="nav-right">
                                         <ul>
-                                            <li><a href="mailto:tungdohotat12345@gmail.com">tungdohotat12345@gmail.com</a></li>
+                                            <li><a href="mailto:fashionmarc@gmail.com">fashionmarc@gmail.com</a></li>
                                             <li><a>Hà Nội: 0389055070</a></li>
                                             <li><a>Hưng Yên: 0389055070</a></li>
                                         </ul>

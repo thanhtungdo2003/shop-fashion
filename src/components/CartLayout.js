@@ -72,9 +72,9 @@ function CartLayout() {
                             <>
                                 <div style={{ width: "200px", height: "400px", display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", margin: "auto auto" }}>
                                     <div>
-                                        <PackageOpen size={150} strokeWidth={1}/>
+                                        <PackageOpen size={150} strokeWidth={1} color="rgb(219, 219, 219)"/>
                                     </div>
-                                    <p style={{ fontSize: "20px", color: "rgb(255, 255, 255)" }}>Giỏ hàng trống !</p>
+                                    <p style={{ fontSize: "20px", color: "rgb(101, 101, 101)" }}>Giỏ hàng trống !</p>
                                 </div>
                             </>
                         ) : (

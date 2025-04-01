@@ -9,7 +9,7 @@ import Breadcrumbs from "./Breadcrumbs";
 import axios from "axios";
 import { getUri } from "../js/site";
 import { ProductProvider } from "./ProductsContext";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 function ShopMain() {
     
     return (
@@ -17,6 +17,7 @@ function ShopMain() {
                 
                 <div className="main-container">
                     <div className="main-content">
+                        <ToastContainer />
                         <Outlet />
                     </div>
                 </div>
