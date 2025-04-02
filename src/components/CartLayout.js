@@ -1,6 +1,6 @@
 import Textfield from "@atlaskit/textfield";
 import React, { use, useEffect, useState } from "react";
-import { getProductFromCart, getTotalPriceCart, getUri } from "../js/site";
+import { getProductFromCart, getTotalPriceCart, getUri, removeProductFromCart } from "../js/site";
 import ProductCartItem from "./ProductCartItem";
 import { QuantityProvider, useQuantity } from "./QuantityContext";
 import axios from "axios";
@@ -16,7 +16,7 @@ function CartLayout() {
     const [click, onCLick] = useState(0);
     useEffect(() => {
         window.scrollTo({ top: 800, behavior: "smooth" });
-      }, []);
+    }, []);
     useEffect(() => {
         let isMounted = true; // Biến để kiểm tra component có còn mounted không
 
@@ -27,12 +27,17 @@ function CartLayout() {
 
                 const productRequests = cartItems.map(item =>
                     axios.get(getUri() + `/products/${item.id}`)
-                        .then(res => ({
-                            ...res.data[0],
-                            quantity: item.quantity
-                        })).catch(err=>{
+                        .then(res => {
+                            if (res.data.length == 0){
+                                removeProductFromCart(item.id)
+                            }
+                            return ({
+                                ...res.data[0],
+                                quantity: item.quantity
+                            })
+                        }).catch(err => {
                             console.log(err);
-                            toast.error("Lỗi máy chủ");
+                            toast.error("Lỗi khi tải sản phẩm");
                         })
                 );
 
@@ -72,7 +77,7 @@ function CartLayout() {
                             <>
                                 <div style={{ width: "200px", height: "400px", display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", margin: "auto auto" }}>
                                     <div>
-                                        <PackageOpen size={150} strokeWidth={1} color="rgb(219, 219, 219)"/>
+                                        <PackageOpen size={150} strokeWidth={1} color="rgb(219, 219, 219)" />
                                     </div>
                                     <p style={{ fontSize: "20px", color: "rgb(101, 101, 101)" }}>Giỏ hàng trống !</p>
                                 </div>
@@ -106,7 +111,7 @@ function CartLayout() {
                     </div>
 
                     <div className="summary-info">
-                    <p className="form-title">chi tiết tiền hàng</p>
+                        <p className="form-title">chi tiết tiền hàng</p>
 
                         <div className="summary-item">
                             <p>Tổng tiền hàng: </p><p>{totalprice ? (totalprice).toLocaleString('de-DE') : 0} đ</p>

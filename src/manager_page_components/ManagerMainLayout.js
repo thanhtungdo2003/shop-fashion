@@ -6,13 +6,12 @@ import { AdminProvider } from "./AdminContext";
 import '../admin_page.css'
 
 function ManagerMainLayout() {
-    const [selectedId, setSelectedId] = useState(3);
+    const [selectedId, setSelectedId] = useState(2);
 
-    useEffect(()=>{
-        nav("/manager/product")
-    },[])
+
     const nav = useNavigate();
     const menuItems = [
+        { page: "/manager/", id: 2, icon: <><Home color="rgb(63, 63, 63)" size={"30px"} /><div> Trang chủ</div></>, name: "Box" },
         { page: "/manager/product", id: 3, icon: <><Box color="rgb(63, 63, 63)" size={"30px"} /><div> Sản phẩm</div></>, name: "Box" },
         { page: "/manager/users", id: 4, icon: <><Users2 color="rgb(63, 63, 63)" size={"30px"} /><div> Người dùng</div></>, name: "Staff" },
         { page: "/manager/orders", id: 5, icon: <><PanelTopOpen color="rgb(63, 63, 63)" size={"30px"} /><div> Đơn hàng</div></>, name: "Order" },

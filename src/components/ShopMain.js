@@ -17,7 +17,6 @@ function ShopMain() {
                 
                 <div className="main-container">
                     <div className="main-content">
-                        <ToastContainer />
                         <Outlet />
                     </div>
                 </div>

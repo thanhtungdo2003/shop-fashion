@@ -143,6 +143,9 @@ function OrderPage() {
                     <div className="order-detail-content-container">
                         {
                             products.map((p, index) => {
+
+                                if (!p) return <></>;
+                                if (!p.product_imgs) return <></>;
                                 const imgNames = JSON.parse(p.product_imgs);
                                 const imageName = imgNames.find(i => i.startsWith('1-'))?.split('-')[1] || imgNames[0].split('-')[1];
 
