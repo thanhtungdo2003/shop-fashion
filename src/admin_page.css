@@ -174,12 +174,10 @@
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.461);
-    transform: translateY(-0.1vh);
     box-shadow: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.111);
 
     button {
-      transform: translateX(0vh);
-
+      opacity: 1;
     }
   }
 
@@ -192,8 +190,8 @@
     align-items: center;
 
     button {
+      opacity: 0;
       transition-duration: 0.2s;
-      transform: translateX(10vh);
       border: none;
       outline: none;
       background-color: transparent;
@@ -201,7 +199,7 @@
       cursor: pointer;
 
       &:hover {
-        background-color: #d632326e;
+        background-color: #c4c4c46e;
       }
     }
   }
